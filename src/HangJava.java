@@ -1,7 +1,7 @@
 import acm.program.*;
-import acm.util.*;
+//import acm.util.*;
 
-import java.awt.Color;
+//import java.awt.Color;
 
 import acm.graphics.*;
 //import java.applet.*;
@@ -26,6 +26,7 @@ public class HangJava extends GraphicsProgram{
 		addKeyListeners();
 		
 		drawScaffold();
+		strike();
 	}
 	public void drawScaffold()
 	{
@@ -34,7 +35,25 @@ public class HangJava extends GraphicsProgram{
 	}
 	public void strike()
 	{
+		GImage strike = new GImage("Head.png", 290, 5);
+		add(strike);
 		
+		GImage body = new GImage("Body.png", 290,175);
+		add(body);
+		
+		GImage LHand = new GImage ("LHand.png",330,193);
+		add(LHand);
+		
+		GImage RHand = new GImage("RHand.png",110,189);
+		add(RHand);
+		
+		GImage RLeg = new GImage("RLeg.png",379,340);
+		add(RLeg);
+		
+		GImage LLeg = new GImage("LLeg.png",444,330);
+		add(LLeg);
+		
+
 	}
 	
 	
