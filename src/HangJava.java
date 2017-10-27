@@ -11,6 +11,7 @@ public class HangJava extends GraphicsProgram{
 	public static final int WINDOW_WIDTH = 1000;
 	public static final int WINDOW_HEIGHT = 620;
 	public static final int REFRESH = 50;
+	public static final int PAUSE = 1000;
 	public void run()
 	{
 		setupGame();
@@ -35,36 +36,40 @@ public class HangJava extends GraphicsProgram{
 	}
 	public void strike()
 	{
+		//Draws the man's head
 		GImage strike = new GImage("Head.png", 290, 5);
 		add(strike);
+		pause(PAUSE);
 		
-		GImage body = new GImage("Body.png", 290,175);
+		//Draws the man's body
+		GImage body = new GImage("Body.png", 290, 175);
 		add(body);
+		pause(PAUSE);
 		
-		GImage LHand = new GImage ("LHand.png",330,193);
+		//Draws the man's left hand
+		GImage LHand = new GImage ("LHand.png", 330, 193);
 		add(LHand);
+		pause(PAUSE);
 		
-		GImage RHand = new GImage("RHand.png",110,189);
+		//Draws the man's right hand
+		GImage RHand = new GImage("RHand.png", 110, 189);
 		add(RHand);
+		pause(PAUSE);
 		
-		GImage RLeg = new GImage("RLeg.png",379,340);
+		//Draws the man's right leg
+		GImage RLeg = new GImage("RLeg.png", 379, 340);
 		add(RLeg);
+		pause(PAUSE);
 		
-		GImage LLeg = new GImage("LLeg.png",444,330);
+		//Draws the man's left leg
+		GImage LLeg = new GImage("LLeg.png", 444, 330);
 		add(LLeg);
-		
-
+		pause(PAUSE);
 	}
-	
-	
-	
-	
-	
-	
-	
+		
 	
 	/**
-	 * 
+	 * Weird serial id error fix for main class
 	 */
 	private static final long serialVersionUID = 1L;
 	
