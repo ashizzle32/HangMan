@@ -36,7 +36,7 @@ public class HangJava extends GraphicsProgram{
 	}
 	public void strike()
 	{
-		//This is so I can refetch
+		//This is so I can fetch the update. 
 		//Draws the man's head
 		GImage strike = new GImage("Head.png", 290, 5);
 		add(strike);
